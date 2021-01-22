@@ -1,0 +1,41 @@
+.policies {
+    &__backgrounds {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 800px;
+        &-left {
+            background: url('../img/page3/event_policies.png') no-repeat 100%/cover;
+        }
+        &-right {
+            background-color: #0c0c0c;
+        }
+    }
+    &__wrapper {
+        margin: 130px 0 0 111px;
+    }
+    &__divider {
+        background-color: #0030dc;
+        width: 100px;
+        height: 5px;
+    }
+    &__title {
+        margin-top: 20px;
+        font-weight: 700;
+        width: 320px;
+    }
+    &__text {
+        margin-top: 20px;
+        width: 390px;
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    &__btn {
+        margin-top: 50px;
+        width: 222px;
+        height: 70px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}

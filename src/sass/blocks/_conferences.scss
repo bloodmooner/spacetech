@@ -1,0 +1,46 @@
+.conferences {
+    &__bg {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 350px;
+        &-left {
+            background-color: #0030DC;
+        }
+        &-right {
+            background-color: #0C0C0C;
+        }
+    }
+    &__wrapper {
+        width: 300px;
+        margin: 90px auto 0px auto;
+    }
+    &__header {
+        font-weight: 300;
+        font-size: 24px;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 64px;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__more {
+        margin-top: 20px;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__arrow {
+        width: 36px;
+        height: 8px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}

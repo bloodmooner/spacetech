@@ -1,0 +1,43 @@
+.communication {
+    position: relative;
+    min-height: 1000px;
+    &__bg {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 50%;
+        height: 1000px;
+        background: url('../img/page2/contact_form.png') no-repeat 100%/cover;
+    }
+    &__wrapper {
+        padding-top: 187px;
+        width: 450px;
+    }
+    &__title {
+        font-weight: 400;
+        color: #010103;
+    }
+    &__form {
+        input {
+            display: block;
+            width: 443px;
+            height: 70px;
+            padding: 23px 35px 20px 35px;
+            margin-bottom: 30px;
+            border: 1px solid #979797;
+            font-weight: 300;
+            font-size: 18px;
+            color: #979797;
+            &:last-child {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &__btn {
+        width: 192px;
+        height: 70px;
+        background-color: #BD0000;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}

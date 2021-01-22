@@ -1,0 +1,25 @@
+.contact {
+    padding: 200px 0px;
+    background-color: #000000;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 130px 860px;
+        column-gap: 320px;
+    }
+    &__adress {
+        display: grid;
+        grid-template: 135px 500px / repeat(2, 330px);
+        column-gap: 115px;
+        row-gap: 70px;
+    }
+    &__caption {
+        font-weight: 300;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    &__physical, &__electr {
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+    }
+}

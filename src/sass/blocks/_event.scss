@@ -1,0 +1,37 @@
+.event {
+    position: relative;
+    min-height: 700px;
+    background-color: #010103;
+    z-index: -2;
+    &__bg {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 896px;
+        height: 700px;
+        background: url('../img/page1/bremen_bg.png') no-repeat 100%/cover;
+        z-index: -1;
+    }
+    &__wrapper {
+        padding-top: 50px;
+        width: 780px;
+        z-index: -1;
+    }
+    &__title {
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff6fb;
+        width: 525px;
+    }
+    &__btn {
+        width: 192px;
+        height: 70px;
+        background-color: #BD0000;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}

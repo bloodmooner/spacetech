@@ -1,0 +1,40 @@
+.sponsors {
+    position: relative;
+    min-height: 600px;
+    background-color: #0c0c0c;
+    z-index: -2;
+    &__bg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 815px;
+        height: 600px;
+        background: url('../img/page1/sponsors_bg.png') no-repeat 100%/cover;
+        z-index: -1;
+    }
+    &__wrapper {
+        position: absolute;
+        right: 100px;
+        padding-top: 130px;
+        width: 550px;
+        z-index: -1;
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    &__list {
+        list-style-type: none;
+        width: 553px;
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 300;
+            font-size: 64px;
+            color: #ffffff;
+        }
+    }
+    
+}

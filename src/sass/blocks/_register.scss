@@ -1,0 +1,74 @@
+.register {
+    background-color: #010103;
+    min-height: 840px;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        top: -210px;
+        padding: 0 115px;
+        display: grid;
+        grid-template-columns: 300px 745px;
+        grid-template-rows: 885px;
+        column-gap: 30px;
+    }
+    &__divider {
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: #BD0000;
+        &-main {
+            position: absolute;
+            top: 313px;
+            width: 1300px;
+            height: 50px;
+            background-color: #BD0000;
+
+        }
+    }
+    &__card {
+        padding: 148px 0px 0px 81px;
+        position: relative;
+        width: 745px;
+        height: 750px;
+        background-color: #010103;
+        &-top {
+            .register__divider {
+                top: 0;
+                right: 0;
+            }
+        }
+        &-bottom {
+            .register__divider {
+                left: 0;
+                bottom: 0;
+            }
+            .register__btn {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 217px;
+                height: 60px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+    &__title {
+        font-weight: 400;
+        color: #ffffff;
+        width: 695px;
+        line-height: 65px;
+    }
+    &__caption {
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    
+}

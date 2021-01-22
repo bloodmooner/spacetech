@@ -1,0 +1,33 @@
+.deadlines {
+    padding: 170px 0px 137px 0px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 290px 525px;
+        justify-content: space-between;
+    }
+    &__aside {
+        position: relative;
+    }
+    &__date {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 24px;
+        color: #010103;
+    }
+    &__spoiler {
+        position: absolute;
+        bottom: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        color: #979797;
+    }
+    &__title {
+        font-weight: 400;
+        color: #010103;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        color: #010103;
+    }
+}

@@ -1,0 +1,25 @@
+.call {
+    background-color: #000000;
+    min-height: 435px;
+    &__wrapper {
+        padding: 200px 110px 0px 110px;
+        display: grid;
+        grid-template-columns: 475px 525px;
+        grid-template-rows: 165px;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 72px;
+        width: 475px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    &__bg {
+        background: url('../img/page2/call_bg.png') no-repeat 100%/cover;
+        min-height: 600px;
+    }
+}

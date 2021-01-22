@@ -1,0 +1,37 @@
+.expo {
+    position: relative;
+    min-height: 1090px;
+    padding-top: 200px;
+    background-color: #000000;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 675px 575px;
+        column-gap: 100px;
+        grid-template-rows: 700px;
+    }
+    &__divider {
+        margin-bottom: 20px;
+        width: 100px;
+        height: 5px;
+        background-color: #0030dc;
+    }
+    &__title {
+        font-weight: 400;
+    }
+    &__list {
+        list-style-type: none;
+        li {
+            font-weight: 300;
+            font-size: 36px;
+            color: #ffffff;
+            line-height: 65px;
+        }
+    }
+    &__bg {
+        background: url('../img/page2/following_bg.png') no-repeat 100%/cover;
+        width: 815px;
+        height: 330px;
+        position: absolute;
+        bottom: 0;
+    }
+}

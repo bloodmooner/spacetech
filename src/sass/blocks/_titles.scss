@@ -1,0 +1,15 @@
+.title {
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    &_fz60 {
+        font-size: 60px;
+    }
+    &_fz64 {
+        font-size: 64px;
+    }
+    &_fz72 {
+        font-size: 72px;
+        line-height: 80px;
+    }
+}

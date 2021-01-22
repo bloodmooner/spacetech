@@ -1,0 +1,47 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import 'libs/font';
+
+
+@import 'blocks/buttons';
+@import 'blocks/titles';
+
+* {
+    font-family: 'Codec Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+.divider {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 5px;
+    background-color: #0030dc;
+}
+
+@import 'blocks/header';
+@import 'blocks/policies';
+@import 'blocks/contact';
+@import 'blocks/directions';
+@import 'blocks/footer';
+
+
+@import 'blocks/call';
+@import 'blocks/conferences';
+@import 'blocks/expo';
+@import 'blocks/deadlines';
+@import 'blocks/questions';
+@import 'blocks/communication';
+
+
+@import 'blocks/event';
+@import 'blocks/sponsors';
+@import 'blocks/exhibit';
+@import 'blocks/view';
+@import 'blocks/register';
