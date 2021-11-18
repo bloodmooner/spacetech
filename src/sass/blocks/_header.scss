@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 900px 385px;
+        width: 100%;
         &-top {
             
             background: url('../img/page3/main_bg.png') no-repeat 100%/cover;
@@ -67,7 +68,9 @@
     }
     &__title {
         width: 670px;
-        
+        @include for-desktop-up {
+            width: 100%;
+        }
     }
     &__wrapper {
         display: grid;
@@ -77,6 +80,9 @@
         margin: 0 auto;
         position: relative;
         top: -380px;
+        @include for-desktop-up {
+            width: 1100px;
+        }
     }
     &__caption {
         font-weight: 300;
