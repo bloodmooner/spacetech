@@ -6,13 +6,33 @@
         grid-template-rows: 800px;
         &-left {
             background: url('../img/page3/event_policies.png') no-repeat 100%/cover;
+            @include for-tablet-portrait-up {
+                grid-row: 2 / 3;
+            }
         }
         &-right {
             background-color: #0c0c0c;
+            @include for-tablet-portrait-up {
+                grid-row: 1 / 2;
+            }
+        }
+        @include for-tablet-portrait-up {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(550px, auto) 550px;
         }
     }
     &__wrapper {
         margin: 130px 0 0 92px;
+        @include for-tablet-landscape-up {
+            margin: 130px 0 0 40px;
+            padding-right: 20px;
+        }
+        @include for-tablet-portrait-up {
+            margin: 45px auto;
+            padding-right: 0;
+            width: 500px;
+        }
     }
     &__divider {
         background-color: #0030dc;
@@ -30,6 +50,9 @@
         font-weight: 300;
         font-size: 18px;
         color: #ffffff;
+        @include for-tablet-landscape-up {
+            width: 100%;
+        }
     }
     &__btn {
         margin-top: 50px;

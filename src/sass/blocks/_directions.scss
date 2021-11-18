@@ -1,14 +1,23 @@
 .directions {
     padding: 150px 0px 125px 0px;
+    background-color: #fff;
     &__wrapper {
         display: grid;
         grid-template-columns: 245px 635px;
         column-gap: 422px;
         grid-template-columns: 0.5fr 1fr;
         column-gap: 60px;
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+        }
     }
     &__sidebar {
         position: relative;
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+            row-gap: 45px;
+            margin-bottom: 30px;
+        }
     }
     &__descr {
         position: absolute;
@@ -16,11 +25,18 @@
         font-weight: 300;
         font-size: 18px;
         color: #979797;
+        @include for-tablet-portrait-up {
+            position: relative;
+            font-size: 20px;
+        }
     }
     &__caption {
         font-weight: 300;
         font-size: 24px;
         color: #010103;
+        @include for-tablet-portrait-up {
+            font-size: 30px;
+        }
     }
     &__item {
         
@@ -96,6 +112,12 @@
         background-color: #979797;
     }
     @include for-desktop-up {
+        padding: 60px 0;
+    }
+    @include for-tablet-landscape-up {
+        padding: 60px 0;
+    }
+    @include for-tablet-portrait-up {
         padding: 60px 0;
     }
 }
