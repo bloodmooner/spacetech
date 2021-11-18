@@ -5,6 +5,9 @@
         display: grid;
         grid-template-columns: repeat(6, 190px);
         justify-content: space-between;
+        @include for-desktop-up {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
     &__title {
         font-size: 20px;
