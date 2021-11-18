@@ -24,9 +24,9 @@
     &__head {
         padding-top: 45px;
         display: grid;
-        grid-template-columns: 115px 590px 195px;
+        grid-template-columns: 112px 860px;
         grid-template-rows: 50px;
-        justify-content: space-between;
+        
         align-items: center;
     }
     &__logo {
@@ -35,11 +35,18 @@
         color: #ffffff;
     }
     &__menu {
+        margin-left: 327px;
+        width: 860px;
+        display: flex;
+        align-items: center;
+    }
+    &__menu-list {
         display: flex;
         width: 610px;
         justify-content: space-between;
         list-style-type: none;
         margin-bottom: 0;
+        
         li {
             display: inline;
             font-weight: 200;
@@ -59,7 +66,12 @@
         color: #ffffff;
         position: absolute;
         left: 50%;
-        transform: translateX(35%);
+        transform: translateX(30%);
+        top: -8px;
+    }
+    &__btn {
+        display: block;
+        margin-left: 63px;
     }
 }
 

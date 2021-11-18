@@ -18,6 +18,18 @@
 .container {
     width: 1300px;
     margin: 0 auto;
+    @include for-desktop-up {
+        width: 1100px;
+    }
+    @include for-tablet-landscape-up {
+        width: 800px;
+    }
+    @include for-tablet-portrait-up {
+        width: 500px;
+    }
+    @include for-phone-only {
+        width: 290px;
+    }
 }
 .divider {
     margin-bottom: 20px;
