@@ -7,11 +7,37 @@
         grid-template-columns: 475px 525px;
         grid-template-rows: 165px;
         justify-content: space-between;
+        @include for-desktop-up {
+            padding: 90px 0;
+        }
+        @include for-tablet-landscape-up {
+            padding: 90px 0;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            grid-template-rows: auto;
+        }
+        @include for-tablet-portrait-up {
+            padding: 90px 0;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            grid-template-rows: auto;
+        }
+        @include for-phone-only {
+            padding: 90px 0;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            grid-template-rows: auto;
+        }
     }
     &__title {
         font-weight: 400;
         font-size: 72px;
         width: 475px;
+        @include for-phone-only {
+            width: 100%;
+            font-size: 45px;
+            line-height: 60px;
+        }
     }
     &__descr {
         font-weight: 300;
@@ -21,5 +47,26 @@
     &__bg {
         background: url('../img/page2/call_bg.png') no-repeat 100%/cover;
         min-height: 600px;
+        @include for-desktop-up {
+            min-height: 350px;
+        }
+        @include for-tablet-landscape-up {
+            min-height: 350px;
+        }
+        @include for-tablet-portrait-up {
+            min-height: 350px;
+        }
+        @include for-phone-only {
+            min-height: 350px;
+        }
+    }
+    @include for-desktop-up {
+        min-height: auto;
+    }
+    @include for-tablet-landscape-up {
+        min-height: auto;
+    }
+    @include for-tablet-portrait-up {
+        min-height: auto;
     }
 }

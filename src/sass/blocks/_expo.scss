@@ -8,6 +8,32 @@
         grid-template-columns: 675px 575px;
         column-gap: 100px;
         grid-template-rows: 700px;
+        @include for-desktop-up {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            row-gap: 60px;
+            width: 600px;
+        }
+        @include for-tablet-landscape-up {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            row-gap: 60px;
+            width: 675px;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            row-gap: 60px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        @include for-phone-only {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            row-gap: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
     &__divider {
         margin-bottom: 20px;
@@ -17,6 +43,31 @@
     }
     &__title {
         font-weight: 400;
+        @include for-desktop-up {
+            z-index: 10;
+        }
+        @include for-tablet-landscape-up {
+            z-index: 10;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 60px;
+        }
+        @include for-phone-only {
+            font-size: 45px;
+            line-height: 60px;
+        }
+    }
+    &__caption {
+        @include for-desktop-up {
+            z-index: 10;
+        }
+        @include for-tablet-landscape-up {
+            z-index: 10;
+        }
+        @include for-tablet-portrait-up {
+            z-index: 10;
+            font-size: 30px;
+        }
     }
     &__list {
         list-style-type: none;
@@ -24,7 +75,11 @@
             font-weight: 300;
             font-size: 36px;
             color: #ffffff;
-            line-height: 65px;
+            line-height: 70px;
+            @include for-phone-only {
+                font-size: 25px;
+                line-height: 50px;
+            }
         }
     }
     &__bg {
@@ -33,5 +88,41 @@
         height: 330px;
         position: absolute;
         bottom: 0;
+        @include for-desktop-up {
+            right: 0;
+            height: 100%;
+            z-index: 1;
+            width: 500px;
+            background: url('../img/page2/following_bg.png') no-repeat 50%/cover;
+        }
+        @include for-tablet-landscape-up {
+            right: 0;
+            height: 100%;
+            z-index: 1;
+            width: 300px;
+            background: url('../img/page2/following_bg.png') no-repeat 50%/cover;
+        }
+        @include for-tablet-portrait-up {
+            width: 100%;
+            position: relative;
+            
+        }
+        @include for-phone-only {
+            width: 100%;
+            position: relative;
+            
+        }
+    }
+    @include for-desktop-up {
+        padding: 90px 0;
+        min-height: auto;
+    }
+    @include for-tablet-landscape-up {
+        padding: 90px 0;
+        min-height: auto;
+    }
+    @include for-tablet-portrait-up {
+        padding: 90px 0 0 0;
+        min-height: auto;
     }
 }

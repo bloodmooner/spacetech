@@ -9,6 +9,16 @@
         &-right {
             background-color: #0C0C0C;
         }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 350px);
+            
+        }
+        @include for-phone-only {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 350px);
+            
+        }
     }
     &__wrapper {
         width: 300px;
@@ -25,6 +35,9 @@
         font-size: 64px;
         color: #ffffff;
         text-align: center;
+        @include for-phone-only {
+            font-size: 50px;
+        }
     }
     &__more {
         margin-top: 20px;

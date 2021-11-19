@@ -170,6 +170,9 @@
     @include for-tablet-portrait-up {
         min-height: auto;
     }
+    @include for-phone-only {
+        min-height: auto;
+    }
 }
 
 .header__conference {
@@ -190,9 +193,20 @@
         z-index: -2;
     }
     &-wrapper {
-        position: absolute;
-        top: 0px;
-        left: 150px;
+        width: 1300px;
+        margin: 0 auto;
+        @include for-desktop-up {
+            width: 1100px;
+        }
+        @include for-tablet-landscape-up {
+            width: 800px;
+        }
+        @include for-tablet-portrait-up {
+            width: 500px;
+        }
+        @include for-phone-only {
+            width: 290px;
+        }
     }
     &-btn {
         width: 192px;
@@ -202,6 +216,7 @@
         font-weight: 300;
         font-size: 14px;
         color: #0030DC;
+        margin-left: 55px;
     }
     &-title {
         margin-top: 235px;
@@ -209,6 +224,16 @@
         font-size: 72px;
         color: #ffffff;
         width: 750px;
+        @include for-tablet-portrait-up {
+            width: 100%;
+            margin-top: 140px;
+        }
+        @include for-phone-only {
+            width: 100%;
+            font-size: 44px;
+            line-height: 60px;
+            margin-top: 380px;
+        }
     }
     &-subtitle {
         margin-top: 20px;
@@ -216,6 +241,12 @@
         font-size: 18px;
         color: #ffffff;
         width: 650px;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     &-watch {
         margin-top: 60px;
