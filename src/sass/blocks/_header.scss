@@ -300,12 +300,21 @@
     }
 
     &-wrapper {
+        position: relative;
+        width: 1300px;
+        margin: 0 auto;
+        @include for-desktop-up {
+            width: 100%;
+        }
+    }
+    &-content {
+        margin: 0;
         position: absolute;
-        top: 0px;
-        left: 150px;
+        top: 296px;
+        right: 0;
     }
     &-header {
-        margin: 300px 0px 0px 443px;
+        
     }
     &-title {
         font-weight: 400;
@@ -319,74 +328,70 @@
     &-subwrapper {
         position: relative;
     }
-    &-card {
-        width: 860px;
-        height: 455px;
-        background-color: #010103;
-        position: absolute;
-        bottom: -215px;
-        left: 595px;
-        z-index: 50;
+    
+}
+
+
+.header {
+
+    &__main-card-container {
+        width: 835px;
+        background: #0C0C0C;
+        margin-top: 220px;
     }
-    &-elements {
-        &-top {
-            position: relative;
-            .header__main-divider {
-                top: 0;
-                right: 0;
-            }
-        }
-        &-bot {
-            position: relative;
-            .header__main-divider {
-                bottom: 0;
-                left: 0;
-            }
-        }
+
+    &__main-card-content {
+        padding: 100px 72px 0 72px
     }
-    &-divider {
-        position: absolute;
-        width: 100px;
-        height: 5px;
-        background-color: #BD0000;
+
+    &__main-card-label {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #0030DC;
+        opacity: 0.9;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
     }
-    &-button {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+
+    &__main-card-title {
+        font-weight: 300;
+        font-size: 97px;
+        line-height: 86px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__main-card-text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FFF6FB;
+        width: 614px;
+    }
+
+    &__main-card-bottom {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+    }
+
+    &__main-card-btn {
         display: block;
         width: 192px;
         height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 14px;
-    }
-    &-content {
-        width: 715px;
-        height: 100%;
-        padding: 100px 0px 100px 0px;
-        margin: 0px auto;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #0030DC;
+        margin-top: 45px;
         
     }
-    &-subcaption {
-        color: #0030dc;
-        font-weight: 300;
-        font-size: 24px;
-        text-align: right;
-        margin-bottom: 0;
-        text-transform: uppercase;
-    }
-    &-caption {
-        margin-top: 20px;
-        font-weight: 300;
-        font-size: 100px;
-        color: #ffffff;
-        line-height: 70px;
-        text-transform: uppercase;
-    }
-    &-description {
-        width: 614px;
-        margin-top: 10px;
-        font-weight: 300;
-        font-size: 18px;
-        color: #fff6fb;
-    }
 }
+

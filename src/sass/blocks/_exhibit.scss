@@ -1,9 +1,13 @@
 .exhibit {
-    padding: 186px 0;
+    padding: 183px 0;
+    background-color: #fff;
     &__wrapper {
         display: grid;
         grid-template-columns: 500px 665px;
         justify-content: space-between;
+        @include for-desktop-up {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     &__links {
         display: flex;
@@ -19,6 +23,7 @@
         font-weight: 300;
         font-size: 24px;
         color: #010103;
+        padding-top: 30px;
     }
     &__list {
         list-style-type: none;
@@ -27,10 +32,21 @@
             font-weight: 300;
             font-size: 18px;
             color: #010103;
+            padding-bottom: 8px;
         }
     }
     &__title {
         font-weight: 400;
         color: #010103;
+        @include for-desktop-up {
+            font-size: 71px;
+        }
+    }
+    &__head {
+        position: relative;
+    }
+    &__divider {
+        position: absolute;
+        top: -20px;
     }
 }

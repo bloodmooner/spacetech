@@ -1,6 +1,6 @@
 .register {
     background-color: #010103;
-    min-height: 840px;
+    min-height: 820px;
     position: relative;
     &__wrapper {
         position: absolute;
@@ -10,6 +10,10 @@
         grid-template-columns: 300px 745px;
         grid-template-rows: 885px;
         column-gap: 30px;
+        @include for-desktop-up {
+            padding: 0;
+            column-gap: 55px;
+        }
     }
     &__divider {
         position: absolute;

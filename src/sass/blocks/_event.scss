@@ -11,6 +11,10 @@
         height: 700px;
         background: url('../img/page1/bremen_bg.png') no-repeat 100%/cover;
         z-index: -1;
+        @include for-desktop-up {
+            width: 50%;
+            height: 100%;
+        }
     }
     &__wrapper {
         padding-top: 50px;
