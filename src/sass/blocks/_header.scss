@@ -281,6 +281,15 @@
         background-color: #010103;
         min-height: 1670px;
         z-index: -2;
+        @include for-tablet-landscape-up {
+            min-height: 1500px;
+        }
+        @include for-tablet-portrait-up {
+            min-height: 1500px;
+        }
+        @include for-phone-only {
+            min-height: 1500px;
+        }
     }
     &-tl {
         position: absolute;
@@ -290,6 +299,15 @@
         width: 1010px;
         height: 1240px;
         z-index: -2;
+        @include for-tablet-landscape-up {
+            width: 800px;
+        }
+        @include for-tablet-portrait-up {
+            width: 500px;
+        }
+        @include for-phone-only {
+            width: 290px;
+        }
     }
     &-bl {
         position: absolute;
@@ -306,6 +324,15 @@
         @include for-desktop-up {
             width: 100%;
         }
+        @include for-tablet-landscape-up {
+            width: 100%;
+        }
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
+        @include for-phone-only {
+            width: 100%;
+        }
     }
     &-content {
         margin: 0;
@@ -319,6 +346,15 @@
     &-title {
         font-weight: 400;
         width: 835px;
+        @include for-tablet-landscape-up {
+            width: 800px;
+        }
+        @include for-tablet-portrait-up {
+            width: 500px;
+        }
+        @include for-phone-only {
+            width: 290px;
+        }
     }
     &-subtitle {
         font-weight: 200;
@@ -328,7 +364,15 @@
     &-subwrapper {
         position: relative;
     }
-    
+    @include for-tablet-landscape-up {
+        min-height: 1500px;
+    }
+    @include for-tablet-portrait-up {
+        min-height: 1500px;
+    }
+    @include for-phone-only {
+        min-height: 1500px;
+    }
 }
 
 
@@ -338,6 +382,17 @@
         width: 835px;
         background: #0C0C0C;
         margin-top: 220px;
+        @include for-tablet-landscape-up {
+            width: 800px;
+            margin-top: 320px;
+        }
+        @include for-tablet-portrait-up {
+            width: 500px;
+            margin-top: 320px;
+        }
+        @include for-phone-only {
+            width: 290px;
+        }
     }
 
     &__main-card-content {
@@ -362,6 +417,9 @@
         line-height: 86px;
         text-transform: uppercase;
         color: #FFFFFF;
+        @include for-tablet-landscape-up {
+            font-size: 93px;
+        }
     }
 
     &__main-card-text {

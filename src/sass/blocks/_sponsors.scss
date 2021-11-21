@@ -9,7 +9,8 @@
             grid-template-columns: repeat(2, 1fr);
         }
         @include for-tablet-landscape-up {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 500px);
         }
     }
     &__wrapper {
@@ -23,6 +24,10 @@
         @include for-desktop-up {
             left: 40px;
         }
+        @include for-tablet-landscape-up {
+            left: 50%;
+            transform: translate3D(-50%, -50%, 0);
+        }
     }
     &__bg {
         width: 815px;
@@ -33,6 +38,15 @@
         }
         @include for-tablet-landscape-up {
             width: 100%;
+            height: auto;
+        }
+        @include for-tablet-portrait-up {
+            width: 100%;
+            height: auto;
+        }
+        @include for-phone-only {
+            width: 100%;
+            height: auto;
         }
     }
     
@@ -56,13 +70,27 @@
             @include for-desktop-up {
                 font-size: 55px;
             }
+            @include for-tablet-landscape-up {
+                font-size: 55px;
+            }
+            @include for-tablet-portrait-up {
+                font-size: 55px;
+            }
         }
         @include for-desktop-up {
             width: 500px;
         }
         @include for-tablet-landscape-up {
-            width: 100%;
+            width: 500px;
         }
     }
-    
+    @include for-tablet-landscape-up {
+        min-height: auto;
+    }
+    @include for-tablet-portrait-up {
+        min-height: auto;
+    }
+    @include for-phone-only {
+        min-height: auto;
+    }
 }

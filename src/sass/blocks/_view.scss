@@ -9,6 +9,18 @@
         @include for-desktop-up {
             grid-template-columns: 2fr 1fr;
         }
+        @include for-tablet-landscape-up {
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
+        @include for-phone-only {
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
     }
     &__description {
         
@@ -37,5 +49,14 @@
     &__bg {
         min-height: 640px;
         background: url('../img/page1/issues_bg.png') no-repeat 100%/cover;
+    }
+    @include for-tablet-landscape-up {
+        padding: 100px 0 5px 0;
+    }
+    @include for-tablet-portrait-up {
+        padding: 100px 0 5px 0;
+    }
+    @include for-phone-only {
+        padding: 100px 0 5px 0;
     }
 }
