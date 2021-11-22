@@ -20,9 +20,11 @@
         }
         @include for-tablet-portrait-up {
             position: relative;
+            width: 100%;
         }
         @include for-phone-only {
             position: relative;
+            width: 100%;
         }
     }
     &__content {
@@ -44,6 +46,9 @@
         padding-top: 50px;
         width: 780px;
         z-index: -1;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
     }
     &__title {
         font-weight: 400;
@@ -71,13 +76,13 @@
     @include for-tablet-portrait-up {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 550px 550px;
+        grid-template-rows: 700px 550px;
         row-gap: 60px;
     }
     @include for-phone-only {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 550px 550px;
+        grid-template-rows: 700px 550px;
         row-gap: 60px;
     }
 }

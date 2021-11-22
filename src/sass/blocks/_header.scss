@@ -339,6 +339,12 @@
         position: absolute;
         top: 296px;
         right: 0;
+        @include for-tablet-portrait-up {
+            top: 320px;
+        }
+        @include for-phone-only {
+            top: 320px;
+        }
     }
     &-header {
         
@@ -388,15 +394,22 @@
         }
         @include for-tablet-portrait-up {
             width: 500px;
-            margin-top: 320px;
+            margin-top: 100px;
         }
         @include for-phone-only {
             width: 290px;
+            margin-top: 100px;
         }
     }
 
     &__main-card-content {
-        padding: 100px 72px 0 72px
+        padding: 100px 72px 0 72px;
+        @include for-tablet-portrait-up {
+            padding: 30px 30px 0 30px;
+        }
+        @include for-phone-only {
+            padding: 30px 30px 0 30px;
+        }
     }
 
     &__main-card-label {
@@ -420,6 +433,14 @@
         @include for-tablet-landscape-up {
             font-size: 93px;
         }
+        @include for-tablet-portrait-up {
+            font-size: 62px;
+            line-height: 75px;
+        }
+        @include for-phone-only {
+            font-size: 62px;
+            line-height: 75px;
+        }
     }
 
     &__main-card-text {
@@ -428,6 +449,12 @@
         line-height: 150%;
         color: #FFF6FB;
         width: 614px;
+        @include for-tablet-portrait-up {
+            width: 100%;
+        }
+        @include for-phone-only {
+            width: 100%;
+        }
     }
 
     &__main-card-bottom {

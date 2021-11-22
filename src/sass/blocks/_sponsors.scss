@@ -12,6 +12,10 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 500px);
         }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 500px);
+        }
     }
     &__wrapper {
         position: relative;
@@ -25,6 +29,14 @@
             left: 40px;
         }
         @include for-tablet-landscape-up {
+            left: 50%;
+            transform: translate3D(-50%, -50%, 0);
+        }
+        @include for-tablet-portrait-up {
+            left: 50%;
+            transform: translate3D(-50%, -50%, 0);
+        }
+        @include for-phone-only {
             left: 50%;
             transform: translate3D(-50%, -50%, 0);
         }
@@ -81,6 +93,9 @@
             width: 500px;
         }
         @include for-tablet-landscape-up {
+            width: 500px;
+        }
+        @include for-tablet-portrait-up {
             width: 500px;
         }
     }
