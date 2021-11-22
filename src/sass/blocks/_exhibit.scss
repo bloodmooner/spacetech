@@ -35,10 +35,17 @@
         }
         @include for-phone-only {
             position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+            width: 100%;
         }
     }
     &__aside {
         position: relative;
+        @include for-phone-only {
+            width: 290px;
+        }
     }
     &__caption {
         font-weight: 300;
@@ -70,6 +77,10 @@
         color: #010103;
         @include for-desktop-up {
             font-size: 71px;
+        }
+        @include for-phone-only {
+            font-size: 42px;
+            line-height: 55px;
         }
     }
     &__head {

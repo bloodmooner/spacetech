@@ -16,6 +16,10 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 500px);
         }
+        @include for-phone-only {
+            grid-template-columns: 1fr;
+            grid-template-rows: 500px 700px;
+        }
     }
     &__wrapper {
         position: relative;
@@ -88,6 +92,11 @@
             @include for-tablet-portrait-up {
                 font-size: 55px;
             }
+            @include for-phone-only {
+                font-size: 40px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
         @include for-desktop-up {
             width: 500px;
@@ -97,6 +106,9 @@
         }
         @include for-tablet-portrait-up {
             width: 500px;
+        }
+        @include for-phone-only {
+            width: 100%;
         }
     }
     @include for-tablet-landscape-up {

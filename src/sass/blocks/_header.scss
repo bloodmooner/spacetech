@@ -306,7 +306,8 @@
             width: 500px;
         }
         @include for-phone-only {
-            width: 290px;
+            width: 100%;
+            background: url('../img/page1/main_bg.png') no-repeat 50%/cover;
         }
     }
     &-bl {
@@ -360,6 +361,8 @@
         }
         @include for-phone-only {
             width: 290px;
+            font-size: 40px;
+            line-height: 60px;
         }
     }
     &-subtitle {
@@ -438,8 +441,8 @@
             line-height: 75px;
         }
         @include for-phone-only {
-            font-size: 62px;
-            line-height: 75px;
+            font-size: 32px;
+            line-height: 45px;
         }
     }
 
